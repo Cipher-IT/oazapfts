@@ -447,8 +447,9 @@ export default class ApiGenerator {
       if (!isRequired && this.opts.unionUndefined) {
         type = factory.createUnionTypeNode([type, cg.keywordType.undefined]);
       }
+      const nullable = isNullable(schema);
       return cg.createPropertySignature({
-        questionToken: !isRequired,
+        questionToken: (!isRequired && nullable),
         name,
         type,
       });
