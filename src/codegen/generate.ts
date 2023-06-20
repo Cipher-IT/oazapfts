@@ -769,7 +769,7 @@ export default class ApiGenerator {
         if (bodyVar) {
           init.push(
             cg.createPropertyAssignment(
-              'body',
+              'data',
               factory.createIdentifier(bodyVar),
             ),
           );
