@@ -1,6 +1,6 @@
 {
   "name": "@rtk-query/oazapfts-patched",
-  "version": "3.6.0-1",
+  "version": "3.6.0-2",
   "description": "Forked and patched version of oazapfts, an OpenApi TypeScript client generator",
   "main": "lib/index.js",
   "bin": {
